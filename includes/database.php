@@ -27,6 +27,24 @@ class MySQLDatabase {
             unset($this->connection);
         }
     }
+
+    public function query($sql) {
+        $result = mysqli_cquery($this->connection, $sql);
+        $this->confirm_query($result);
+        return $result;
+    }
+
+    private function confirm_query($result) {
+        if (!$result) {
+            die('Database query failed');
+        }
+    }
+
+    public function mysql_prep($string) {
+        $escaped_string = mysqli_real_escape_string($this->connection, $string);
+        return $escaped_string;
+    }
+
 }
 
 
