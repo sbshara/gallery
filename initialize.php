@@ -12,6 +12,7 @@ require_once(INC_DIR.DS."functions.php");
 
 require_once(INC_DIR.DS."session.php");
 require_once(INC_DIR.DS."database.php");
+require_once(INC_DIR.DS."databaseobject.php");
 
 require_once(INC_DIR.DS."user.php");
 
