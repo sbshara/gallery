@@ -14,7 +14,11 @@ class User {
     public static function find_by_sql($sql="") {
         global $database;
         $result_set = $database->query($sql);
-        return $result_set;
+        $object_array = array();
+        while ($row = $database->fetch_array($result_set)) {
+            $object_array[] = self::instantiate($row);
+        }
+        return $object_array;
     }
 
     public static function find_all () {
@@ -23,9 +27,8 @@ class User {
 
     public static function find_by_id($id=0) {
         global $database;
-        $result_set = self::find_by_sql("SELECT * FROM users WHERE id={$id}");
-        $found = $database->fetch_array($result_set);
-        return $found;
+        $result_array = self::find_by_sql("SELECT * FROM users WHERE id={$id}");
+        return !empty($result_array) ? array_shift($result_array) : false;
     }
 
     public function full_name () {
