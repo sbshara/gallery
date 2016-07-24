@@ -1,7 +1,7 @@
 <?php
 
 defined("DS") ? null : define("DS", DIRECTORY_SEPARATOR);
-defined("SIT_ROT") ? null : define("SIT_ROT", dirname(__FILE__));
+defined("SIT_ROT") ? null : define("SIT_ROT", __DIR__);
 
 defined("PUB_DIR") ? null : define("PUB_DIR", SIT_ROT.DS."public_html");
 defined("INC_DIR") ? null : define("INC_DIR", SIT_ROT.DS."includes");
