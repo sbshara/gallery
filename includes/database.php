@@ -1,6 +1,6 @@
 <?php
 
-require_once('config.php');
+require_once(INC_DIR.DS.'config.php');
 
 class MySQLDatabase {
 

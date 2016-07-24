@@ -1,6 +1,6 @@
 <?php
 
-require_once('database.php');
+require_once(INC_DIR.DS.'database.php');
 
 class User {
 

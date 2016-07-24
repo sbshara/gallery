@@ -23,7 +23,7 @@ function output_message ($message="") {
 
 function __autoload ($class_name) {
     $class_name = strtolower($class_name);
-    $path = "../includes/{$class_name}.php";
+    $path = INC_DIR.DS."{$class_name}.php";
     if (file_exists($path)) {
         require_once($path);
     } else {
