@@ -28,19 +28,9 @@ if (isset($_POST['submit'])) {
     $password = "";
 }
 
+include('../layouts/adminheader.php');
 ?>
 
-
-<html>
-    <head>
-        <title>Photo Gallery</title>
-        <link href="../css/styles.css" media="all" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <div id="header">
-            <h1>Photo Gallery</h1>
-        </div>
-        <div id="main">
             <h2>Staff Login</h2>
             <?php if(isset($message)) {echo output_message($message);} ?>
 
@@ -65,7 +55,4 @@ if (isset($_POST['submit'])) {
                     </tr>
                 </table>
             </form>
-        </div>
-    </body>
-</html>
-<?php if(isset($database)){ $database->close_connection(); } ?>
+<?php include('../layouts/footer.php'); ?>

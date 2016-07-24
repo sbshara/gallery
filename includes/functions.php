@@ -31,4 +31,9 @@ function __autoload ($class_name) {
     }
 }
 
+function include_layout_template($template="") {
+    include(PUB_DIR.DS."layouts".DS.$template);
+}
+
+
 ?>

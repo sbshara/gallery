@@ -36,7 +36,7 @@ a {
 }
 
 #header {
-    height: 8%;
+    height: 9%;
     text-align: left;
     background: #1A446C;
     color: #D4E6F4;
@@ -47,13 +47,13 @@ a {
 }
 
 #main {
-    min-height: 87%;
+    height: 88%;
     width: 100%;
     background: #EEE4B9;
 }
 
 #footer {
-    height: 5%;
+    height: 3%;
     text-align: center;
     background: #1A446C;
     color: #D4E6F4;
