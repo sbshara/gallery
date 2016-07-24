@@ -1,17 +1,11 @@
 <?php
 
-require_once('../initialize.php');
+defined("DS") ? null : define("DS", directoryiterator());
 
-$user = User::find_by_id(1);
-echo $user->full_name();
+defined("SIT_ROT") ? null : define("SIT_ROT", dirname(__FILE__));
 
-echo '<hr/>';
-
-$users = User::find_all();
-foreach ($users as $user) {
-    echo "User: " . $user->username . "<br/>";
-    echo "Name: " . $user->full_name() . "<br/>";
-}
-
+defined("PUB_DIR") ? null : define("PUB_DIR", SIT_ROT.DS."public_html");
+defined("INC_DIR") ? null : define("INC_DIR", SIT_ROT.DS."includes");
+defined("LIB_DIR") ? null : define("LIB_DIR", SIT_ROT.DS."Libraries");
 
 ?>
