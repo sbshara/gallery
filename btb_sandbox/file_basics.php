@@ -1,9 +1,42 @@
 <?php
+// CH07_03
 
-
-
+echo "<hr/>";
 //==========================================================
 // CH07_02
+/*
+            ====  Symbolic notation: rwxrw-r--    ====
+                    User        Group       Other
+    Read (r)        Yes         Yes         Yes
+    Write (w)       Yes         Yes         No
+    Execute (x)     Yes         No          No
+
+                    rwx         rw-         r--
+
+
+
+            ====  Octal notation: 764    ====
+            r   =   4
+            w   =   2
+            x   =   1
+            -   =   0
+
+            rwx =   7
+            rw  =   6
+            r   =   4
+
+==View files in a folder (UNIX Systems)==
+ls
+ls -la
+sample: -rw-r--r--@      Owner       Group
+
+==Search for webserver, and get username for it==
+ps aux | grep httpd
+
+
+
+*/
+
 
 echo "<hr/>";
 //==========================================================
