@@ -1,6 +1,17 @@
 <?php
 echo "<hr/>";
 //==========================================================
+// CH07_04
+/*
+    safe_mode status (from my_phpinfo.php)
+    you can change from php.ini (then restart your apache server)
+
+    > ls -la | grep file_
+    --this will show files that include the syntax file_ in the name
+
+*/
+echo "<hr/>";
+//==========================================================
 // CH07_03
 /*
     ===Change file permissions(UNIX systems)===
