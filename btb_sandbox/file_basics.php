@@ -1,5 +1,16 @@
 <?php
+echo "<hr/>";
+//==========================================================
 // CH07_03
+/*
+    ===Change file permissions(UNIX systems)===
+    sudo (do this command with highest level of permission)
+    > sudo chown www file_permissions.php
+    > sudo chmod 777 file_permissions.php
+    > sudo chmod 644 file_permissions.php
+    > sudo chmod 600 file_permissions.php
+    > sudo chmod 666 file_permissions.php
+*/
 
 echo "<hr/>";
 //==========================================================
@@ -26,17 +37,13 @@ echo "<hr/>";
             r   =   4
 
 ==View files in a folder (UNIX Systems)==
-ls
-ls -la
+> ls
+> ls -la
 sample: -rw-r--r--@      Owner       Group
 
 ==Search for webserver, and get username for it==
-ps aux | grep httpd
-
-
-
+> ps aux | grep httpd
 */
-
 
 echo "<hr/>";
 //==========================================================
