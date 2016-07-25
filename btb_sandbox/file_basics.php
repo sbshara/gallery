@@ -1,6 +1,43 @@
 <?php
 echo "<hr/>";
 //==========================================================
+// CH07_05
+/*
+    fopen(filename, mode);
+    Modes:
+                                                    read + write
+        -   r   (reading mode)                          r+
+                read from start of file
+                file must exist
+
+        -   w   (writing mode)                          w+
+                truncate / write from start of file
+
+        -   a   (writing mode)                          a+
+                append / write from end of
+                existing content
+
+        -   x   (writing mode)                          x+
+                write from the start
+                file can't not exist to start with
+
+        -   t   Translate Windows line endings
+                Use \r\n
+
+        -   b   Binary mode
+                Don't translate anything
+
+
+    b is PHP default mode since PHP 4.3.2
+
+
+    Line Endings:
+    Windows:                \r\n
+    Linux, UNIX, MAC:       \n
+
+*/
+echo "<hr/>";
+//==========================================================
 // CH07_04
 /*
     safe_mode status (from my_phpinfo.php)
