@@ -37,7 +37,7 @@ function include_layout_template($template="") {
 
 function log_action($action="", $message="") {
     $log = SIT_ROT.DS.'logs'.DS.'logs.txt';
-    $msg = strftime('%Y-%m-%d %H:%M', time()) . " | " . $action . " : " . $message . ".\n";
+    $msg = strftime('%Y-%m-%d %H:%M', time()) . " | " . $action . " : " . $message . ";\n";
     if (!is_writable($log)) {
         echo "Unable to write to log file, please check your access permissions.";
     } else {
