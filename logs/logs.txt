@@ -1,3 +1,1 @@
-2016-07-28 10:17 | File Cleared : User ID: 1; Cleared the log file;
-2016-07-28 10:17 | File Access : User ID: 1; Viewed the logfile;
-2016-07-28 10:17 | File Access : User ID: 1; Viewed the logfile;
+2016-07-28 10:21 | File Clear : User ID: 1; Cleared the log file;

@@ -10,7 +10,7 @@ $logfile = SIT_ROT.DS.'logs'.DS.'logs.txt';
 if(isset($_GET['clear'])) {
     if($_GET['clear'] == 'true') {
         file_put_contents($logfile, '');
-        log_action("File Cleared", "User ID: {$session->user_id}; Cleared the log file");
+        log_action("File Clear", "User ID: {$session->user_id}; Cleared the log file");
         redirect_to('logs.php');
     }
 }
@@ -27,7 +27,7 @@ include_layout_template('adminheader.php');
 
 <?php
 if(file_exists($logfile) && is_readable($logfile) && $handle = fopen($logfile, 'r')) {
-    log_action("File Access", "User ID: {$session->user_id}; Viewed the logfile");
+    //log_action("File Read", "User ID: {$session->user_id}; Viewed the logfile");
     echo "<ul>";
     while(!feof($handle)) {
         $entry = fgets($handle);
