@@ -1,4 +1,3 @@
-created a log file
-2016-07-28 00:53 | Login : User: sbshara has successfuly logged in..
-2016-07-28 00:54 | Login : User: sbshara has successfuly logged in;
-2016-07-28 00:56 | Login : User: 'sbshara' has successfuly logged in;
+2016-07-28 10:17 | File Cleared : User ID: 1; Cleared the log file;
+2016-07-28 10:17 | File Access : User ID: 1; Viewed the logfile;
+2016-07-28 10:17 | File Access : User ID: 1; Viewed the logfile;
